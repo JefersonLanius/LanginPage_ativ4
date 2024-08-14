@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+#body {
+    background-color:#fcf1e5;
+}
+header {
+
+    width: 100%;
+    height: 7rem;
+    background-color:#FFE2C1;
+    
+}   
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_icon{
+    
+    margin-left: 5rem;
+}
+
+.navigation img {
+    width: 7rem;
+    height: 7rem;
+}
+.navigation_list_div{
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+}
+.navigation_list{
+    list-style-type: none;
+    display: flex;
+}
+.navigation_list li {
+    margin: 0 0.9rem;
+    font-weight: 500;
+}
+.navigation_list li:hover{
+    cursor: pointer;
+}
+.apresentacao {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.contato{
+    margin: 0;
+}
+.logo {
+    text-align: center;
+     
+}
+.logo img{
+    height: 10rem;
+}
+.apresentacao h1{
+    margin-bottom: 1rem;
+    max-width: 500px;
+    text-align: center;
+}
+.apresentacao h3{
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    text-align: center;
+}
+.apresentacao p {
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    text-align: center;
+}
+.titulo{ 
+    max-width: 50%;
+}
+.bonecos{
+    
+}
+.bonecos img{
+    max-width: 500px;
+    max-height: 500px;
+}
+.eventos{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.gallery{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+}
+.fotos{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.caralign{
+    margin: 0 auto;
+}
+.produtos {
+    margin-top: 5rem;
+}
+.produtos table {
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.produtos img{
+    height: 40px;
+}
+tbody tr td{
+    
+    width: 150px;
+}
+.servicos {       
+    p{
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical; 
+    }
+    
+}
+
+.orcamento_button{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.orcamento {
+    height: 2rem;
+    width: 15rem;
+    background-color: #fd89053f;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.orcamento:hover,
+.submitButton:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+.form {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* .formulario{
+    margin-top: 2rem;
+} */
+
+.formulario label p{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.formulario input,
+.formulario textarea{
+    display: block;
+    width: calc(100% - 22px);
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+.submitButton{
+    margin-top: 1rem;
+    width: 10rem;
+    background-color: #fd89053f;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+}
+
+.estrela{
+    text-align: center;
+}
+.estrela img{
+    height: 10rem;
+}
+.avalicacaoDoUsuario{
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 2rem auto;
+    width: 30%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFE2C1;
+}
+.avalicacaoDoUsuario img{
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+.avalicacaoDoUsuario p{
+    margin: 0;
+    
+}
+.avalicacaoDoUsuario div{
+    text-align: left;
+    justify-content: left;
+}
+.avalicacaoDoUsuario div img{
+    height: 1rem;
+}
+.delete , .update{
+    margin-top: 0.5rem;
+    height: 1.5rem;
+    width: 3.5rem;
+    border: none;
+}
+.delete p,
+.update p{
+    font-size: 0.8rem;
+}
+.descAvaliacao{
+    line-height: 1rem;
+}
+.novaAvaliacao{
+    margin: 0 auto;
+    width: 30%;
+}
+.form_avaliação{
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn_avaliacao{
+    margin-top: 1rem;
+    align-self: center;
+    width: 7rem;
+}
+.nomeUsuario{
+    font-weight: 500;
+}
+.filtro{
+    width: 30%;
+    margin: 2rem auto;
+}
+.btn_filtrar{
+    margin-top: 0.5rem;
+    width: 100%;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gourmetizando</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body" >
+    <!-- <header>
+      <nav class="navigation">
+        <div class="navigation_icon">
+          <img src="./img/logo_sf_sf.png" alt="" />
+        </div>
+        <div class="navigation_list_div">
+          <ul class="navigation_list">
+            <li onclick="requisitar('index.html')">Home</li>
+            <li onclick="requisitar('contato.html')">Contato</li>
+            <li>Avaliações</li>
+          </ul>
+        </div>
+      </nav>
+    </header> -->
+    <section class="avaliacoes" id="avaliacoes"  onload="">
+      <div class="estrela" onload="loadTasks()">
+        <img src="./img/estrela.png" />
+        <h1 id="notaMedia">0/5</h1>
+      </div>
+      
+      <div class="novaAvaliacao"> 
+        <h4>Deixe sua avaliação</h4>
+        <form class="form_avaliação">
+            <label>Nome</label>
+            <input type="text" id="nome">
+            <label>Comentário</label>
+            <input type="text" id="descricao">
+            <label>Nota (De 1 à 5)</label>
+            <input type="number" min="1" max="5" id="nota">
+            <input type="button" value="Publicar" class="btn_avaliacao" onclick="PubAvaliacao()">
+        </form>
+      </div>
+      <div class="filtro">
+            <select class="form-control " id="Nota">
+                <option value="">Nota</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <input type="button" value="Filtrar" class="btn_filtrar" onclick="Filtrar()">
+      </div>
+      <!-- <div class="avalicacaoDoUsuario" id="avalicacaoDoUsuario">
+        <img src="./img/usuario.png" />
+        <div>
+          <p class="nomeUsuario">Usuario João</p>
+          <img src="./img/estrela.png" /><img src="./img/estrela.png" /><img
+            src="./img/estrela.png"
+          /><img src="./img/estrela.png" />
+          <img src="./img/estrela.png" />
+          <p class="descAvaliacao">O serviço prestado é excelente! Contratamos através da indicação de um amigo da família e valu cada centavo!</p>
+        </div>
+      </div> -->
+
+      <!-- <div class="avalicacaoDoUsuario" id="avalicacaoDoUsuario">
+        <img src="./img/usuario.png" />
+        <div>
+          <p class="nomeUsuario">Usuario Felipe</p>
+          <img src="./img/estrela.png" /><img src="./img/estrela.png" /><img
+            src="./img/estrela.png"
+          /><img src="./img/estrela.png" />
+          <img src="./img/estrela.png" />
+          <p class="descAvaliacao">Indico muito! Não conhecia a empresa, porém pelas fotos me chamou a atenção e não me arrependo de forma alguma.</p>
+            <button class="delete" onclick="deletar(event)"><p>Excluir</p></button>
+            <button class="update" onclick="() => {console.log('Atualizou')}"><p>Editar</p></button>
+        </div>
+      </div> -->
+      <!-- <div class="avalicacaoDoUsuario" id="avalicacaoDoUsuario">
+        <img src="./img/usuario.png" />
+        <div>
+          <p class="nomeUsuario">Usuario Fábio</p>
+          <img src="./img/estrela.png" /><img src="./img/estrela.png" /><img
+            src="./img/estrela.png"
+          /><img src="./img/estrela.png" />
+          <p class="descAvaliacao">Uma empresa muito compromissada</p>
+        </div>
+      </div> -->
+      <div class="avalicacaoDoUsuario1" id="avalicacaoDoUsuario1">
+
+      </div>
+    </section>
+    <footer class="footer">
+      <div>&copy; 2024 Gourmetizando. Developed by Jeferson Lanius.</div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
